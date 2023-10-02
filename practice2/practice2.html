@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulir Minat UKM Kampus</title>
+</head>
+<body>
+    <h1>Formulir Minat UKM Kampus</h1>
+    <p>Silakan isi formulir di bawah ini untuk menyatakan minat Anda dalam UKM di kampus:</p>
+
+    <form action="#" method="post">
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap Anda" required>
+        <br><br>
+
+        <label for="email">Alamat Email:</label>
+        <input type="email" id="email" name="email" placeholder="Masukkan alamat email Anda" required>
+        <br><br>
+
+        <label for="nomor_telepon">Nomor Telepon:</label>
+        <input type="tel" id="nomor_telepon" name="nomor_telepon" placeholder="Masukkan nomor telepon aktif Anda" required>
+        <br><br>
+
+        <label for="minat">Minat UKM:</label>
+        <select id="minat" name="minat">
+            <option value="teater">Teater</option>
+            <option value="tari">Tari</option>
+            <option value="fotografi">Fotografi</option>
+            <option value="musik">Musik</option>
+            <option value="olahraga">Olahraga</option>
+        </select>
+        <br><br>
+
+        <label for="alasan_bergabung">Alasan Bergabung UKM:</label>
+        <textarea id="alasan_bergabung" name="alasan_bergabung" rows="4" placeholder="Tulis alasan Anda bergabung dengan UKM di sini"></textarea>
+        <br><br>
+
+        <input type="submit" value="Kirim Minat">
+    </form>
+</body>
+</html>
