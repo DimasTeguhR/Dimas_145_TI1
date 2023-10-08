@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Table Example</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sample Table</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Region</th>
+        </tr>
+        <tr>
+            <td>Dimas Teguh Ramadhani</td>
+            <td>19</td>
+            <td>Brebes</td>
+        </tr>
+        <tr>
+            <td>Fasha Agatha</td>
+            <td>20</td>
+            <td>Tangerang</td>
+        </tr>
+        <tr>
+            <td>Ahmad Jundy</td>
+            <td>21</td>
+            <td>Borneo</td>
+        </tr>
+    </table>
+</body>
+</html>
