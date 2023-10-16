@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pengalaman Magang</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('images/pat-whelen-Rxt252RzQlY-unsplash.jpg');
+            background-size: cover;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="#" id="internshipForm">
+            <h2>Formulir Pengalaman Magang</h2>
+            <div class="form-group">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telpon">No Telpon:</label>
+                <input type="tel" id="telpon" name="telpon" required>
+            </div>
+            <div class="form-group">
+                <label>Jenis Kelamin:</label>
+                <input type="radio" id="laki" name="jenisKelamin" value="Laki-laki" required>
+                <label for="laki">Laki-laki</label>
+                <input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan" required>
+                <label for="perempuan">Perempuan</label>
+            </div>
+            <div class="form-group">
+                <label for="alamat">Alamat:</label>
+                <textarea id="alamat" name="alamat" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="pengalamanMagang">Pengalaman Magang:</label>
+                <textarea id="pengalamanMagang" name="pengalamanMagang" required></textarea>
+            </div>
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('internshipForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            var nama = document.getElementById('nama').value;
+            var email = document.getElementById('email').value;
+            var telpon = document.getElementById('telpon').value;
+            var jenisKelamin = document.querySelector('input[name="jenisKelamin"]:checked').value;
+            var alamat = document.getElementById('alamat').value;
+            var pengalamanMagang = document.getElementById('pengalamanMagang').value;
+
+            alert('Terima kasih atas pengisian formulir!');
+        });
+    </script>
+</body>
+
+</html>
